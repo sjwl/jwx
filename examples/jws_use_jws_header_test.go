@@ -3,10 +3,10 @@ package examples_test
 import (
 	"fmt"
 
-	"github.com/lestrrat-go/jwx/v2/jwa"
-	"github.com/lestrrat-go/jwx/v2/jwk"
-	"github.com/lestrrat-go/jwx/v2/jws"
-	"github.com/lestrrat-go/jwx/v2/jwt"
+	"github.com/sjwl/jwx/v2/jwa"
+	"github.com/sjwl/jwx/v2/jwk"
+	"github.com/sjwl/jwx/v2/jws"
+	"github.com/sjwl/jwx/v2/jwt"
 )
 
 func ExampleJWS_UseJWSHeader() {
@@ -18,7 +18,7 @@ func ExampleJWS_UseJWSHeader() {
 	key.Set(jws.KeyIDKey, `secret-key`)
 
 	tok, err := jwt.NewBuilder().
-		Issuer(`github.com/lestrrat-go/jwx`).
+		Issuer(`github.com/sjwl/jwx`).
 		Build()
 	if err != nil {
 		fmt.Printf(`failed to build token: %s`, err)

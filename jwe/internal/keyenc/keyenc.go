@@ -19,12 +19,12 @@ import (
 	"golang.org/x/crypto/curve25519"
 	"golang.org/x/crypto/pbkdf2"
 
-	"github.com/lestrrat-go/jwx/v2/internal/ecutil"
-	"github.com/lestrrat-go/jwx/v2/jwa"
-	contentcipher "github.com/lestrrat-go/jwx/v2/jwe/internal/cipher"
-	"github.com/lestrrat-go/jwx/v2/jwe/internal/concatkdf"
-	"github.com/lestrrat-go/jwx/v2/jwe/internal/keygen"
-	"github.com/lestrrat-go/jwx/v2/x25519"
+	"github.com/sjwl/jwx/v2/internal/ecutil"
+	"github.com/sjwl/jwx/v2/jwa"
+	contentcipher "github.com/sjwl/jwx/v2/jwe/internal/cipher"
+	"github.com/sjwl/jwx/v2/jwe/internal/concatkdf"
+	"github.com/sjwl/jwx/v2/jwe/internal/keygen"
+	"github.com/sjwl/jwx/v2/x25519"
 )
 
 func NewNoop(alg jwa.KeyEncryptionAlgorithm, sharedkey []byte) (*Noop, error) {

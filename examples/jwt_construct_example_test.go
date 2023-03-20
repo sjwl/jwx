@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/lestrrat-go/jwx/v2/jwt"
+	"github.com/sjwl/jwx/v2/jwt"
 )
 
 func ExampleJWT_Construct() {
 	tok := jwt.New()
-	if err := tok.Set(jwt.IssuerKey, `github.com/lestrrat-go/jwx`); err != nil {
+	if err := tok.Set(jwt.IssuerKey, `github.com/sjwl/jwx`); err != nil {
 		fmt.Printf("failed to set claim: %s\n", err)
 		return
 	}
@@ -24,5 +24,5 @@ func ExampleJWT_Construct() {
 		return
 	}
 	// OUTPUT:
-	// {"aud":["users"],"iss":"github.com/lestrrat-go/jwx"}
+	// {"aud":["users"],"iss":"github.com/sjwl/jwx"}
 }

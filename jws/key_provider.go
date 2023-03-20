@@ -6,8 +6,8 @@ import (
 	"net/url"
 	"sync"
 
-	"github.com/lestrrat-go/jwx/v2/jwa"
-	"github.com/lestrrat-go/jwx/v2/jwk"
+	"github.com/sjwl/jwx/v2/jwa"
+	"github.com/sjwl/jwx/v2/jwk"
 )
 
 // KeyProvider is responsible for providing key(s) to sign or verify a payload.

@@ -5,8 +5,8 @@ import (
 	"fmt"
 
 	"github.com/cloudflare/circl/sign/ed25519"
-	"github.com/lestrrat-go/jwx/v2/jwa"
-	"github.com/lestrrat-go/jwx/v2/jws"
+	"github.com/sjwl/jwx/v2/jwa"
+	"github.com/sjwl/jwx/v2/jws"
 )
 
 type CirclEdDSASignerVerifier struct{}

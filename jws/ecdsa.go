@@ -8,9 +8,9 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/lestrrat-go/jwx/v2/internal/keyconv"
-	"github.com/lestrrat-go/jwx/v2/internal/pool"
-	"github.com/lestrrat-go/jwx/v2/jwa"
+	"github.com/sjwl/jwx/v2/internal/keyconv"
+	"github.com/sjwl/jwx/v2/internal/pool"
+	"github.com/sjwl/jwx/v2/jwa"
 )
 
 var ecdsaSigners map[jwa.SignatureAlgorithm]*ecdsaSigner

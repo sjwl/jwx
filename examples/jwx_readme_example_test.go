@@ -6,11 +6,11 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/lestrrat-go/jwx/v2/jwa"
-	"github.com/lestrrat-go/jwx/v2/jwe"
-	"github.com/lestrrat-go/jwx/v2/jwk"
-	"github.com/lestrrat-go/jwx/v2/jws"
-	"github.com/lestrrat-go/jwx/v2/jwt"
+	"github.com/sjwl/jwx/v2/jwa"
+	"github.com/sjwl/jwx/v2/jwe"
+	"github.com/sjwl/jwx/v2/jwk"
+	"github.com/sjwl/jwx/v2/jws"
+	"github.com/sjwl/jwx/v2/jwt"
 )
 
 func ExampleJWX() {
@@ -31,7 +31,7 @@ func ExampleJWX() {
 	{
 		// Build a JWT!
 		tok, err := jwt.NewBuilder().
-			Issuer(`github.com/lestrrat-go/jwx`).
+			Issuer(`github.com/sjwl/jwx`).
 			IssuedAt(time.Now()).
 			Build()
 		if err != nil {
@@ -58,7 +58,7 @@ func ExampleJWX() {
 
 		// Work with *http.Request!
 		{
-			req, err := http.NewRequest(http.MethodGet, `https://github.com/lestrrat-go/jwx`, nil)
+			req, err := http.NewRequest(http.MethodGet, `https://github.com/sjwl/jwx`, nil)
 			req.Header.Set(`Authorization`, fmt.Sprintf(`Bearer %s`, signed))
 
 			verifiedToken, err := jwt.ParseRequest(req, jwt.WithKey(jwa.RS256, pubkey))

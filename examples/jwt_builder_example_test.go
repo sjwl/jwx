@@ -5,14 +5,14 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/lestrrat-go/jwx/v2/jwt"
+	"github.com/sjwl/jwx/v2/jwt"
 )
 
 func ExampleJWT_Builder() {
 	tok, err := jwt.NewBuilder().
 		Claim(`claim1`, `value1`).
 		Claim(`claim2`, `value2`).
-		Issuer(`github.com/lestrrat-go/jwx`).
+		Issuer(`github.com/sjwl/jwx`).
 		Audience([]string{`users`}).
 		Build()
 	if err != nil {
@@ -24,5 +24,5 @@ func ExampleJWT_Builder() {
 		return
 	}
 	// OUTPUT:
-	// {"aud":["users"],"claim1":"value1","claim2":"value2","iss":"github.com/lestrrat-go/jwx"}
+	// {"aud":["users"],"claim1":"value1","claim2":"value2","iss":"github.com/sjwl/jwx"}
 }

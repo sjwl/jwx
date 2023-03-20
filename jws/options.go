@@ -1,9 +1,9 @@
 package jws
 
 import (
-	"github.com/lestrrat-go/jwx/v2/jwa"
-	"github.com/lestrrat-go/jwx/v2/jwk"
 	"github.com/lestrrat-go/option"
+	"github.com/sjwl/jwx/v2/jwa"
+	"github.com/sjwl/jwx/v2/jwk"
 )
 
 type identHeaders struct{}

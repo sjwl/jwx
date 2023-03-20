@@ -3,8 +3,8 @@ package examples_test
 import (
 	"fmt"
 
-	"github.com/lestrrat-go/jwx/v2/jwa"
-	"github.com/lestrrat-go/jwx/v2/jwe"
+	"github.com/sjwl/jwx/v2/jwa"
+	"github.com/sjwl/jwx/v2/jwe"
 )
 
 func ExampleJWE_VerifyWithKey() {

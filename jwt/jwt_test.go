@@ -20,16 +20,16 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lestrrat-go/jwx/v2/internal/ecutil"
-	"github.com/lestrrat-go/jwx/v2/internal/json"
-	"github.com/lestrrat-go/jwx/v2/internal/jwxtest"
-	"github.com/lestrrat-go/jwx/v2/jwe"
-	"github.com/lestrrat-go/jwx/v2/jwt/internal/types"
+	"github.com/sjwl/jwx/v2/internal/ecutil"
+	"github.com/sjwl/jwx/v2/internal/json"
+	"github.com/sjwl/jwx/v2/internal/jwxtest"
+	"github.com/sjwl/jwx/v2/jwe"
+	"github.com/sjwl/jwx/v2/jwt/internal/types"
 
-	"github.com/lestrrat-go/jwx/v2/jwa"
-	"github.com/lestrrat-go/jwx/v2/jwk"
-	"github.com/lestrrat-go/jwx/v2/jws"
-	"github.com/lestrrat-go/jwx/v2/jwt"
+	"github.com/sjwl/jwx/v2/jwa"
+	"github.com/sjwl/jwx/v2/jwk"
+	"github.com/sjwl/jwx/v2/jws"
+	"github.com/sjwl/jwx/v2/jwt"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
@@ -1431,7 +1431,7 @@ func TestVerifyAuto(t *testing.T) {
 	defer srv.Close()
 
 	tok, err := jwt.NewBuilder().
-		Claim(jwt.IssuerKey, `https://github.com/lestrrat-go/jwx/v2`).
+		Claim(jwt.IssuerKey, `https://github.com/sjwl/jwx/v2`).
 		Claim(jwt.SubjectKey, `jku-test`).
 		Build()
 
@@ -1464,7 +1464,7 @@ func TestVerifyAuto(t *testing.T) {
 		return
 	}
 	wl = jwk.NewMapWhitelist().
-		Add(`https://github.com/lestrrat-go/jwx/v2`)
+		Add(`https://github.com/sjwl/jwx/v2`)
 	_, err = jwt.Parse(signed, jwt.WithVerifyAuto(nil, jwk.WithFetchWhitelist(wl)))
 	if !assert.Error(t, err, `jwt.Parse should fail`) {
 		return

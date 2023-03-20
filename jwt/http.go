@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/lestrrat-go/jwx/v2/internal/pool"
+	"github.com/sjwl/jwx/v2/internal/pool"
 )
 
 // ParseHeader parses a JWT stored in a http.Header.

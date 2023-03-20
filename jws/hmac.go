@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"hash"
 
-	"github.com/lestrrat-go/jwx/v2/internal/keyconv"
-	"github.com/lestrrat-go/jwx/v2/jwa"
+	"github.com/sjwl/jwx/v2/internal/keyconv"
+	"github.com/sjwl/jwx/v2/jwa"
 )
 
 var hmacSignFuncs = map[jwa.SignatureAlgorithm]hmacSignFunc{}

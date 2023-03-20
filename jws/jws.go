@@ -37,12 +37,12 @@ import (
 	"unicode/utf8"
 
 	"github.com/lestrrat-go/blackmagic"
-	"github.com/lestrrat-go/jwx/v2/internal/base64"
-	"github.com/lestrrat-go/jwx/v2/internal/json"
-	"github.com/lestrrat-go/jwx/v2/internal/pool"
-	"github.com/lestrrat-go/jwx/v2/jwa"
-	"github.com/lestrrat-go/jwx/v2/jwk"
-	"github.com/lestrrat-go/jwx/v2/x25519"
+	"github.com/sjwl/jwx/v2/internal/base64"
+	"github.com/sjwl/jwx/v2/internal/json"
+	"github.com/sjwl/jwx/v2/internal/pool"
+	"github.com/sjwl/jwx/v2/jwa"
+	"github.com/sjwl/jwx/v2/jwk"
+	"github.com/sjwl/jwx/v2/x25519"
 )
 
 var registry = json.NewRegistry()

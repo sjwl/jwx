@@ -3,7 +3,7 @@ package cipher
 import (
 	"crypto/cipher"
 
-	"github.com/lestrrat-go/jwx/v2/jwe/internal/keygen"
+	"github.com/sjwl/jwx/v2/jwe/internal/keygen"
 )
 
 const (

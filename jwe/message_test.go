@@ -3,9 +3,9 @@ package jwe_test
 import (
 	"testing"
 
-	"github.com/lestrrat-go/jwx/v2/internal/json"
+	"github.com/sjwl/jwx/v2/internal/json"
 
-	"github.com/lestrrat-go/jwx/v2/jwe"
+	"github.com/sjwl/jwx/v2/jwe"
 	"github.com/stretchr/testify/assert"
 )
 

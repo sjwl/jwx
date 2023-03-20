@@ -22,14 +22,14 @@ import (
 	"time"
 
 	"github.com/lestrrat-go/httprc"
-	"github.com/lestrrat-go/jwx/v2/internal/base64"
-	"github.com/lestrrat-go/jwx/v2/internal/json"
-	"github.com/lestrrat-go/jwx/v2/internal/jwxtest"
-	"github.com/lestrrat-go/jwx/v2/jwa"
-	"github.com/lestrrat-go/jwx/v2/jwk"
-	"github.com/lestrrat-go/jwx/v2/jws"
-	"github.com/lestrrat-go/jwx/v2/jwt"
-	"github.com/lestrrat-go/jwx/v2/x25519"
+	"github.com/sjwl/jwx/v2/internal/base64"
+	"github.com/sjwl/jwx/v2/internal/json"
+	"github.com/sjwl/jwx/v2/internal/jwxtest"
+	"github.com/sjwl/jwx/v2/jwa"
+	"github.com/sjwl/jwx/v2/jwk"
+	"github.com/sjwl/jwx/v2/jws"
+	"github.com/sjwl/jwx/v2/jwt"
+	"github.com/sjwl/jwx/v2/x25519"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
@@ -1584,7 +1584,7 @@ func TestJKU(t *testing.T) {
 				Name:  "Rejected by whitelist",
 				Error: true,
 				FetchOptions: func() []jwk.FetchOption {
-					wl := jwk.NewMapWhitelist().Add(`https://github.com/lestrrat-go/jwx/v2`)
+					wl := jwk.NewMapWhitelist().Add(`https://github.com/sjwl/jwx/v2`)
 					return []jwk.FetchOption{
 						jwk.WithFetchWhitelist(wl),
 						jwk.WithHTTPClient(srv.Client()),
@@ -1727,7 +1727,7 @@ func TestJKU(t *testing.T) {
 				Name:  "Rejected by whitelist",
 				Error: true,
 				FetchOptions: func() []jwk.FetchOption {
-					wl := jwk.NewMapWhitelist().Add(`https://github.com/lestrrat-go/jwx/v2`)
+					wl := jwk.NewMapWhitelist().Add(`https://github.com/sjwl/jwx/v2`)
 					return []jwk.FetchOption{
 						jwk.WithFetchWhitelist(wl),
 					}
@@ -1940,7 +1940,7 @@ func TestGH840(t *testing.T) {
 	require.NoError(t, err, `jwk.PublicKeyOf should succeed`)
 
 	tok, err := jwt.NewBuilder().
-		Issuer(`github.com/lestrrat-go/jwx`).
+		Issuer(`github.com/sjwl/jwx`).
 		IssuedAt(time.Now()).
 		Build()
 	require.NoError(t, err, `jwt.NewBuilder should succeed`)

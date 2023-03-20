@@ -8,8 +8,8 @@ import (
 
 	"github.com/lestrrat-go/iter/arrayiter"
 	"github.com/lestrrat-go/iter/mapiter"
-	"github.com/lestrrat-go/jwx/v2/internal/json"
-	"github.com/lestrrat-go/jwx/v2/internal/pool"
+	"github.com/sjwl/jwx/v2/internal/json"
+	"github.com/sjwl/jwx/v2/internal/pool"
 )
 
 const keysKey = `keys` // appease linter

@@ -3,7 +3,7 @@ package jws
 import (
 	"fmt"
 
-	"github.com/lestrrat-go/jwx/v2/jwa"
+	"github.com/sjwl/jwx/v2/jwa"
 )
 
 type SignerFactory interface {

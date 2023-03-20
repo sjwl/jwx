@@ -3,7 +3,7 @@ package bench_test
 import (
 	"testing"
 
-	"github.com/lestrrat-go/jwx/v2/internal/json"
+	"github.com/sjwl/jwx/v2/internal/json"
 )
 
 func TestBackend(t *testing.T) {

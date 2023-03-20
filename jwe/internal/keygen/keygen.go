@@ -10,11 +10,11 @@ import (
 
 	"golang.org/x/crypto/curve25519"
 
-	"github.com/lestrrat-go/jwx/v2/internal/ecutil"
-	"github.com/lestrrat-go/jwx/v2/jwa"
-	"github.com/lestrrat-go/jwx/v2/jwe/internal/concatkdf"
-	"github.com/lestrrat-go/jwx/v2/jwk"
-	"github.com/lestrrat-go/jwx/v2/x25519"
+	"github.com/sjwl/jwx/v2/internal/ecutil"
+	"github.com/sjwl/jwx/v2/jwa"
+	"github.com/sjwl/jwx/v2/jwe/internal/concatkdf"
+	"github.com/sjwl/jwx/v2/jwk"
+	"github.com/sjwl/jwx/v2/x25519"
 )
 
 // Bytes returns the byte from this ByteKey

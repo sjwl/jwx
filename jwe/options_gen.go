@@ -5,7 +5,7 @@ package jwe
 import (
 	"io/fs"
 
-	"github.com/lestrrat-go/jwx/v2/jwa"
+	"github.com/sjwl/jwx/v2/jwa"
 	"github.com/lestrrat-go/option"
 )
 

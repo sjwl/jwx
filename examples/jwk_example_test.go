@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/lestrrat-go/jwx/v2/internal/json"
-	"github.com/lestrrat-go/jwx/v2/jwk"
+	"github.com/sjwl/jwx/v2/internal/json"
+	"github.com/sjwl/jwx/v2/jwk"
 )
 
 func ExampleJWK_Usage() {

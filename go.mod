@@ -1,8 +1,8 @@
-module github.com/lestrrat-go/jwx/v2
+module github.com/sjwl/jwx/v2
 
 go 1.16
 
-replace github.com/lestrrat-go/jwx/v2 => github.com/sjwl/jwx/v2 v2.0.8
+replace github.com/sjwl/jwx/v2 => github.com/sjwl/jwx/v2 v2.0.8
 
 require (
 	github.com/decred/dcrd/dcrec/secp256k1/v4 v4.1.0

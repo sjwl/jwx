@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/lestrrat-go/jwx/v2/jwt"
+	"github.com/sjwl/jwx/v2/jwt"
 )
 
 func ExampleJWT_ValidateValidator() {
@@ -18,7 +18,7 @@ func ExampleJWT_ValidateValidator() {
 	})
 
 	tok, err := jwt.NewBuilder().
-		Issuer(`github.com/lestrrat-go/jwx`).
+		Issuer(`github.com/sjwl/jwx`).
 		IssuedAt(time.Unix(aLongLongTimeAgo, 0)).
 		Build()
 	if err != nil {

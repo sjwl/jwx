@@ -9,7 +9,7 @@ import (
 	"os"
 	"regexp"
 
-	"github.com/lestrrat-go/jwx/v2/jwk"
+	"github.com/sjwl/jwx/v2/jwk"
 )
 
 func ExampleJWK_Whitelist() {

@@ -1,4 +1,4 @@
-module github.com/lestrrat-go/jwx/v2/tools/cmd/genalgs
+module github.com/sjwl/jwx/v2/tools/cmd/genalgs
 
 go 1.16
 

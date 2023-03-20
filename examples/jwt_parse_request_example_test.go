@@ -6,7 +6,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/lestrrat-go/jwx/v2/jwt"
+	"github.com/sjwl/jwx/v2/jwt"
 )
 
 func ExampleJWT_ParseRequest_Authorization() {
@@ -14,7 +14,7 @@ func ExampleJWT_ParseRequest_Authorization() {
 		`access_token`: []string{exampleJWTSignedHMAC},
 	}
 
-	req, err := http.NewRequest(http.MethodGet, `https://github.com/lestrrat-go/jwx`, strings.NewReader(values.Encode()))
+	req, err := http.NewRequest(http.MethodGet, `https://github.com/sjwl/jwx`, strings.NewReader(values.Encode()))
 	if err != nil {
 		fmt.Printf("failed to create request: %s\n", err)
 		return

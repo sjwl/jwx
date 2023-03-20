@@ -12,16 +12,16 @@ import (
 	"io"
 
 	"github.com/lestrrat-go/blackmagic"
-	"github.com/lestrrat-go/jwx/v2/internal/base64"
-	"github.com/lestrrat-go/jwx/v2/internal/json"
-	"github.com/lestrrat-go/jwx/v2/internal/keyconv"
-	"github.com/lestrrat-go/jwx/v2/jwk"
+	"github.com/sjwl/jwx/v2/internal/base64"
+	"github.com/sjwl/jwx/v2/internal/json"
+	"github.com/sjwl/jwx/v2/internal/keyconv"
+	"github.com/sjwl/jwx/v2/jwk"
 
-	"github.com/lestrrat-go/jwx/v2/jwa"
-	"github.com/lestrrat-go/jwx/v2/jwe/internal/content_crypt"
-	"github.com/lestrrat-go/jwx/v2/jwe/internal/keyenc"
-	"github.com/lestrrat-go/jwx/v2/jwe/internal/keygen"
-	"github.com/lestrrat-go/jwx/v2/x25519"
+	"github.com/sjwl/jwx/v2/jwa"
+	"github.com/sjwl/jwx/v2/jwe/internal/content_crypt"
+	"github.com/sjwl/jwx/v2/jwe/internal/keyenc"
+	"github.com/sjwl/jwx/v2/jwe/internal/keygen"
+	"github.com/sjwl/jwx/v2/x25519"
 )
 
 const (

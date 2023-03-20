@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/lestrrat-go/jwx/v2/internal/json"
-	"github.com/lestrrat-go/jwx/v2/jwa"
-	"github.com/lestrrat-go/jwx/v2/jwk"
-	"github.com/lestrrat-go/jwx/v2/jwt"
+	"github.com/sjwl/jwx/v2/internal/json"
+	"github.com/sjwl/jwx/v2/jwa"
+	"github.com/sjwl/jwx/v2/jwk"
+	"github.com/sjwl/jwx/v2/jwt"
 )
 
 var payloadLoremIpsum []byte
@@ -33,7 +33,7 @@ func Setup() error {
 	payloadLoremIpsum = []byte(`Lorem ipsum`)
 
 	tok, err := jwt.NewBuilder().
-		Issuer(`github.com/lestrrat-go/jwx`).
+		Issuer(`github.com/sjwl/jwx`).
 		IssuedAt(time.Now().Add(-5 * time.Minute)).
 		Expiration(time.Now().Add(time.Hour)).
 		Build()

@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/lestrrat-go/jwx/v2/jwe"
+	"github.com/sjwl/jwx/v2/jwe"
 )
 
 func BenchmarkJWE(b *testing.B) {

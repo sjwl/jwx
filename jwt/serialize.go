@@ -3,9 +3,9 @@ package jwt
 import (
 	"fmt"
 
-	"github.com/lestrrat-go/jwx/v2/internal/json"
-	"github.com/lestrrat-go/jwx/v2/jwe"
-	"github.com/lestrrat-go/jwx/v2/jws"
+	"github.com/sjwl/jwx/v2/internal/json"
+	"github.com/sjwl/jwx/v2/jwe"
+	"github.com/sjwl/jwx/v2/jws"
 )
 
 type SerializeCtx interface {

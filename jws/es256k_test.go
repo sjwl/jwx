@@ -6,9 +6,9 @@ package jws_test
 import (
 	"testing"
 
-	"github.com/lestrrat-go/jwx/v2/internal/jwxtest"
-	"github.com/lestrrat-go/jwx/v2/jwa"
-	"github.com/lestrrat-go/jwx/v2/jwk"
+	"github.com/sjwl/jwx/v2/internal/jwxtest"
+	"github.com/sjwl/jwx/v2/jwa"
+	"github.com/sjwl/jwx/v2/jwk"
 	"github.com/stretchr/testify/assert"
 )
 

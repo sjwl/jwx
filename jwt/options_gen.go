@@ -7,8 +7,8 @@ import (
 	"io/fs"
 	"time"
 
-	"github.com/lestrrat-go/jwx/v2/jwe"
-	"github.com/lestrrat-go/jwx/v2/jws"
+	"github.com/sjwl/jwx/v2/jwe"
+	"github.com/sjwl/jwx/v2/jws"
 	"github.com/lestrrat-go/option"
 )
 

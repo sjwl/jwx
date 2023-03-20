@@ -3,8 +3,8 @@ package content_crypt //nolint:golint
 import (
 	"fmt"
 
-	"github.com/lestrrat-go/jwx/v2/jwa"
-	"github.com/lestrrat-go/jwx/v2/jwe/internal/cipher"
+	"github.com/sjwl/jwx/v2/jwa"
+	"github.com/sjwl/jwx/v2/jwe/internal/cipher"
 )
 
 func (c Generic) Algorithm() jwa.ContentEncryptionAlgorithm {

@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/lestrrat-go/jwx/v2/internal/json"
+	"github.com/sjwl/jwx/v2/internal/json"
 )
 
 const (

@@ -6,12 +6,12 @@ import (
 	"os"
 	"time"
 
-	"github.com/lestrrat-go/jwx/v2/jwt"
+	"github.com/sjwl/jwx/v2/jwt"
 )
 
 func ExampleJWT_SerializeJSON() {
 	tok, err := jwt.NewBuilder().
-		Issuer(`github.com/lestrrat-go/jwx`).
+		Issuer(`github.com/sjwl/jwx`).
 		IssuedAt(time.Unix(aLongLongTimeAgo, 0)).
 		Build()
 	if err != nil {
@@ -21,5 +21,5 @@ func ExampleJWT_SerializeJSON() {
 
 	json.NewEncoder(os.Stdout).Encode(tok)
 	// OUTPUT:
-	// {"iat":233431200,"iss":"github.com/lestrrat-go/jwx"}
+	// {"iat":233431200,"iss":"github.com/sjwl/jwx"}
 }

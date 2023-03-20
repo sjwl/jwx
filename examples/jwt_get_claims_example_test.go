@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/lestrrat-go/jwx/v2/jwt"
+	"github.com/sjwl/jwx/v2/jwt"
 )
 
 func ExampleJWT_GetClaims() {
 	tok, err := jwt.NewBuilder().
 		IssuedAt(time.Now()).
-		Issuer(`github.com/lestrrat-go/jwx`).
+		Issuer(`github.com/sjwl/jwx`).
 		Subject(`example`).
 		Claim(`claim1`, `value1`).
 		Claim(`claim2`, `2022-05-16T07:35:56+00:00`).

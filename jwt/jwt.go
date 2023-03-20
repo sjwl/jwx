@@ -11,10 +11,10 @@ import (
 	"io"
 	"sync/atomic"
 
-	"github.com/lestrrat-go/jwx/v2"
-	"github.com/lestrrat-go/jwx/v2/internal/json"
-	"github.com/lestrrat-go/jwx/v2/jws"
-	"github.com/lestrrat-go/jwx/v2/jwt/internal/types"
+	"github.com/sjwl/jwx/v2"
+	"github.com/sjwl/jwx/v2/internal/json"
+	"github.com/sjwl/jwx/v2/jws"
+	"github.com/sjwl/jwx/v2/jwt/internal/types"
 )
 
 var errInvalidJWT = errors.New(`invalid JWT`)

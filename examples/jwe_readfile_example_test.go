@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/lestrrat-go/jwx/v2/jwe"
+	"github.com/sjwl/jwx/v2/jwe"
 )
 
 func ExampleJWE_ReadFile() {

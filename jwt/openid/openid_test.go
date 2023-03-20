@@ -7,13 +7,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lestrrat-go/jwx/v2/internal/json"
-	"github.com/lestrrat-go/jwx/v2/internal/jwxtest"
+	"github.com/sjwl/jwx/v2/internal/json"
+	"github.com/sjwl/jwx/v2/internal/jwxtest"
 
-	"github.com/lestrrat-go/jwx/v2/jwa"
-	"github.com/lestrrat-go/jwx/v2/jwt"
-	"github.com/lestrrat-go/jwx/v2/jwt/internal/types"
-	"github.com/lestrrat-go/jwx/v2/jwt/openid"
+	"github.com/sjwl/jwx/v2/jwa"
+	"github.com/sjwl/jwx/v2/jwt"
+	"github.com/sjwl/jwx/v2/jwt/internal/types"
+	"github.com/sjwl/jwx/v2/jwt/openid"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
@@ -248,10 +248,10 @@ func TestOpenIDClaims(t *testing.T) {
 			},
 		},
 		{
-			Value: "https://github.com/lestrrat-go/jwx/v2",
+			Value: "https://github.com/sjwl/jwx/v2",
 			Key:   openid.ProfileKey,
 			Check: func(token openid.Token) {
-				assert.Equal(t, token.Profile(), "https://github.com/lestrrat-go/jwx/v2")
+				assert.Equal(t, token.Profile(), "https://github.com/sjwl/jwx/v2")
 			},
 		},
 		{
@@ -262,10 +262,10 @@ func TestOpenIDClaims(t *testing.T) {
 			},
 		},
 		{
-			Value: "https://github.com/lestrrat-go/jwx/v2",
+			Value: "https://github.com/sjwl/jwx/v2",
 			Key:   openid.WebsiteKey,
 			Check: func(token openid.Token) {
-				assert.Equal(t, token.Website(), "https://github.com/lestrrat-go/jwx/v2")
+				assert.Equal(t, token.Website(), "https://github.com/sjwl/jwx/v2")
 			},
 		},
 		{
