@@ -2,8 +2,6 @@ module github.com/sjwl/jwx/v2
 
 go 1.16
 
-replace github.com/sjwl/jwx/v2 => github.com/sjwl/jwx/v2 v2.0.8
-
 require (
 	github.com/decred/dcrd/dcrec/secp256k1/v4 v4.1.0
 	github.com/goccy/go-json v0.10.1
